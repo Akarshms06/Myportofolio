@@ -129,7 +129,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <h2>Welcome to My Portfolio!</h2>
-        <p>I'm Akarsh, a passionate coder and storyteller. Explore my journey in coding, creativity, and more.</p>
+        <p>
+            Akarsh is an Information Science student at PES Engineering College, passionate about coding, UI/UX design, and creative problem-solving. He's an avid reader with a deep interest in temple history and enjoys playing cricket..</p>
     </section>
 
     <!-- Projects Section -->
@@ -154,8 +155,8 @@
     <!-- Footer -->
     <footer>
         <p>Follow me on:
-            <a href="#">LinkedIn</a> | 
-            <a href="#">GitHub</a>
+            <a href="https://www.linkedin.com/in/akarsh-venkatesha-ms-174779283/">LinkedIn</a> | 
+            <a href="https://github.com/Akarshms06">GitHub</a>
         </p>
         <p>&copy; 2024 Akarsh. All Rights Reserved.</p>
     </footer>
