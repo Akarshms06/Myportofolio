@@ -6,206 +6,226 @@
     <title>Akarsh: Code & Creativity that Captivates</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Basic CSS styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0; /* Light Gray Background Color */
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
+  /* Basic CSS styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light Gray Background Color */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
-        /* Updated Header Style */
-        header {
-            background: #323e4e; /* Gradient Background */
-            color: #fff;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
-            opacity: 0; /* Start hidden */
-            transform: translateY(-20px); /* Start position for animation */
-            animation: fadeIn 0.5s forwards; /* Fade-in animation */
-            animation-delay: 0.5s; /* Delay before the header appears */
-        }
+/* Updated Header Style */
+header {
+    background: #323e4e; /* Gradient Background */
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    opacity: 0; /* Start hidden */
+    transform: translateY(-20px); /* Start position for animation */
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+    animation-delay: 0.5s; /* Delay before the header appears */
+}
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            font-weight: bold;
-            text-align: left;
-            padding-left: 20px;
-            display: inline-block;
-        }
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Adjusted font size for better responsiveness */
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    display: inline-block;
+}
 
-        nav {
-            float: right;
-            padding-right: 20px;
-        }
+nav {
+    float: right;
+    padding-right: 20px;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
 
-        /* Round Button Styling */
-        .round-button {
-            display: inline-block;
-            background-color: #8916d6; /* Button background color */
-            color: #fff; /* Text color */
-            padding: 5px 20px; /* Padding for button size */
-            border-radius: 50px; /* Makes the button round */
-            text-decoration: none; /* Remove underline */
-            font-size: 1.1rem; /* Font size */
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-        }
+/* Round Button Styling */
+.round-button {
+    display: inline-block;
+    background-color: #8916d6; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 5px 20px; /* Padding for button size */
+    border-radius: 50px; /* Makes the button round */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjusted font size for better responsiveness */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
 
-        .round-button:hover {
-            background-color: #555; /* Hover background color */
-            transform: scale(1.05); /* Slightly enlarge on hover */
-        }
+.round-button:hover {
+    background-color: #555; /* Hover background color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
 
-        nav ul li {
-            display: inline-block;
-        }
+nav ul li {
+    display: inline-block;
+}
 
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(to right, #00FF5B, #0014FF);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #8fcfcc;
-            gap: 40px;
-            flex-wrap: wrap;
-            opacity: 0; /* Start hidden */
-            transform: translateY(20px); /* Start position for animation */
-            animation: slideIn 0.8s forwards; /* Slide-in animation */
-            animation-delay: 1s; /* Delay before the hero section appears */
-        }
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #00FF5B, #0014FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8fcfcc;
+    gap: 40px;
+    flex-wrap: wrap;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start position for animation */
+    animation: slideIn 0.8s forwards; /* Slide-in animation */
+    animation-delay: 1s; /* Delay before the hero section appears */
+}
 
-        @keyframes slideIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .hero-text {
-            font-weight: bold;
-            max-width: 500px;
-        }
+.hero-text {
+    font-weight: bold;
+    max-width: 500px;
+}
 
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
-        .hero p {
-            font-size: 1.2rem;
-            color: #555;
-        }
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
 
-        .hero img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            opacity: 0; /* Start hidden */
-            transform: translateX(-20px); /* Start position for animation */
-            animation: fadeInImage 0.8s forwards; /* Fade-in animation for the image */
-            animation-delay: 1.3s; /* Delay before the image appears */
-        }
+.hero img {
+    width: 250px; /* Adjusted width for smaller screens */
+    height: 250px; /* Adjusted height for smaller screens */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start hidden */
+    transform: translateX(-20px); /* Start position for animation */
+    animation: fadeInImage 0.8s forwards; /* Fade-in animation for the image */
+    animation-delay: 1.3s; /* Delay before the image appears */
+}
 
-        @keyframes fadeInImage {
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+@keyframes fadeInImage {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
-        /* Projects Section */
-        .projects {
-            padding: 50px 20px;
-            background-color: #838181;
-        }
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #838181;
+}
 
-        .projects h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.2rem;
-        }
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
 
-        .project-grid {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
+.project-grid {
+    display: flex;
+    justify-content: center; /* Center items on smaller screens */
+    flex-wrap: wrap;
+}
 
-        .project-item {
-            background-color: #fff;
-            padding: 20px;
-            margin: 15px;
-            width: 300px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-        }
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
 
-        .project-item:hover {
-            transform: translateY(-5px); /* Lift effect */
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-        }
+.project-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
 
-        .project-item h3 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-        }
+.project-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
 
-        /* Footer */
-        footer {
-            background-color: #474444;
-            color: #ffffff;
-            text-shadow: #555;
-            text-align: center;
-            padding: 20px;
-            opacity: 0; /* Start hidden */
-            transform: translateY(20px); /* Start position for animation */
-            animation: slideInFooter 0.5s forwards; /* Slide-in animation for footer */
-            animation-delay: 1.5s; /* Delay before the footer appears */
-        }
+/* Footer */
+footer {
+    background-color: #474444;
+    color: #ffffff;
+    text-shadow: #555;
+    text-align: center;
+    padding: 20px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start position for animation */
+    animation: slideInFooter 0.5s forwards; /* Slide-in animation for footer */
+    animation-delay: 1.5s; /* Delay before the footer appears */
+}
 
-        @keyframes slideInFooter {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+@keyframes slideInFooter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Adjust header font size for mobile */
+    }
+
+    .hero h2 {
+        font-size: 2rem; /* Adjust hero heading size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjust hero paragraph size */
+    }
+
+    .project-item {
+        width: 90%; /* Full width on mobile */
+    }
+}
+
     </style>
 </head>
 <body>
