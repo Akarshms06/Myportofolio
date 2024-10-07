@@ -11,45 +11,103 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0; /* Light Gray Background Color */
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
+        /* Updated Header Style */
         header {
-            background-color: #333;
+            background: #323e4e; /* Gradient Background */
             color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+            opacity: 0; /* Start hidden */
+            transform: translateY(-20px); /* Start position for animation */
+            animation: fadeIn 0.5s forwards; /* Fade-in animation */
+            animation-delay: 0.5s; /* Delay before the header appears */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 20px;
+            display: inline-block;
+        }
+
+        nav {
+            float: right;
+            padding-right: 20px;
         }
 
         nav ul {
-            display: flex;
-            justify-content: center;
             list-style: none;
+            margin: 0;
             padding: 0;
-            margin: 20px 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Round Button Styling */
+        .round-button {
+            display: inline-block;
+            background-color: #8916d6; /* Button background color */
+            color: #fff; /* Text color */
+            padding: 5px 20px; /* Padding for button size */
+            border-radius: 50px; /* Makes the button round */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.1rem; /* Font size */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .round-button:hover {
+            background-color: #555; /* Hover background color */
+            transform: scale(1.05); /* Slightly enlarge on hover */
         }
 
         nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1rem;
+            display: inline-block;
         }
 
         /* Hero Section */
         .hero {
             text-align: center;
             padding: 80px 20px;
-            background-color: #fff;
+            background: linear-gradient(to right, #00FF5B, #0014FF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #8fcfcc;
+            gap: 40px;
+            flex-wrap: wrap;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start position for animation */
+            animation: slideIn 0.8s forwards; /* Slide-in animation */
+            animation-delay: 1s; /* Delay before the hero section appears */
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-text {
+            font-weight: bold;
+            max-width: 500px;
         }
 
         .hero h2 {
@@ -62,10 +120,29 @@
             color: #555;
         }
 
+        .hero img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0; /* Start hidden */
+            transform: translateX(-20px); /* Start position for animation */
+            animation: fadeInImage 0.8s forwards; /* Fade-in animation for the image */
+            animation-delay: 1.3s; /* Delay before the image appears */
+        }
+
+        @keyframes fadeInImage {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
         /* Projects Section */
         .projects {
             padding: 50px 20px;
-            background-color: #eaeaea;
+            background-color: #838181;
         }
 
         .projects h2 {
@@ -87,6 +164,12 @@
             width: 300px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px); /* Lift effect */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
         }
 
         .project-item h3 {
@@ -96,10 +179,22 @@
 
         /* Footer */
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #474444;
+            color: #ffffff;
+            text-shadow: #555;
             text-align: center;
             padding: 20px;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start position for animation */
+            animation: slideInFooter 0.5s forwards; /* Slide-in animation for footer */
+            animation-delay: 1.5s; /* Delay before the footer appears */
+        }
+
+        @keyframes slideInFooter {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         footer a {
@@ -117,23 +212,26 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Akarsh: Code & Creativity that Captivates</h1>
+        <h1>Akarsh: Code & Creativity</h1>
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="round-button">About</a></li>
+                <li><a href="#" class="round-button">Projects</a></li>
+                <li><a href="#" class="round-button">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Welcome to My Portfolio!</h2>
-        <p>
-            Akarsh is an Information Science student at PES Engineering College, passionate about coding, UI/UX design, and creative problem-solving. He's an avid reader with a deep interest in temple history and enjoys playing cricket..</p>
+        <img src="https://i.pinimg.com/474x/65/e6/35/65e6352d40424e8ccc86a7e7e604effd.jpg" alt="Akarsh Image">
+        <div class="hero-text">
+            <h2>Welcome to My Portfolio!</h2>
+            <p style="color: #fff;" >
+                Akarsh is an Information Science student at PES Engineering College, passionate about coding, UI/UX design, and creative problem-solving.
+            </p>
+        </div>
     </section>
-    <img src="G:\Documents\Akarsh.jpg" style="width: 128px;">
 
     <!-- Projects Section -->
     <section class="projects">
@@ -156,9 +254,10 @@
 
     <!-- Footer -->
     <footer>
-        <p>Follow me on:
-            <a href="https://www.linkedin.com/in/akarsh-venkatesha-ms-174779283/">LinkedIn</a> | 
-            <a href="https://github.com/Akarshms06">GitHub</a>
+        <p>Follow me on:</p>
+        <p>
+            <a href="https://www.linkedin.com/in/akarsh-venkatesha-ms-174779283/" class="round-button">LinkedIn</a>
+            <a href="https://github.com/Akarshms06" class="round-button">GitHub</a>
         </p>
         <p>&copy; 2024 Akarsh. All Rights Reserved.</p>
     </footer>
