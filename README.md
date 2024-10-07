@@ -19,6 +19,7 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         header h1 {
@@ -132,6 +133,7 @@
         <p>
             Akarsh is an Information Science student at PES Engineering College, passionate about coding, UI/UX design, and creative problem-solving. He's an avid reader with a deep interest in temple history and enjoys playing cricket..</p>
     </section>
+    <img src="G:\Documents\Akarsh.jpg" style="width: 128px;">
 
     <!-- Projects Section -->
     <section class="projects">
