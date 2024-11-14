@@ -1,11 +1,43 @@
+
 <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Myportofolio</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Myportofolio" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://akarshms06.github.io/Myportofolio/" />
+<meta property="og:url" content="https://akarshms06.github.io/Myportofolio/" />
+<meta property="og:site_name" content="Myportofolio" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Myportofolio" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Myportofolio","name":"Myportofolio","url":"https://akarshms06.github.io/Myportofolio/"}</script>
+
+
+    <link rel="stylesheet" href="/Myportofolio/assets/css/style.css?v=42728aed85f0875397d3caf0ca02907a148a29e3">
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://akarshms06.github.io/Myportofolio/">Myportofolio</a></h1>
+      
+
+     
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
-    <title>Akarsh: Code & Creativity that Captivates</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Akarsh: Code &amp; Creativity that Captivates</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
   /* Basic CSS styling */
 body {
@@ -233,7 +265,7 @@ footer a:hover {
 
     <!-- Header Section -->
     <header>
-        <h1>Akarsh: Code & Creativity</h1>
+        <h1>Akarsh: Code &amp; Creativity</h1>
         <nav>
             <ul>
                 <li><a href="#" class="round-button">About</a></li>
@@ -245,10 +277,10 @@ footer a:hover {
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="https://i.pinimg.com/474x/65/e6/35/65e6352d40424e8ccc86a7e7e604effd.jpg" alt="Akarsh Image">
+        <img src="https://i.pinimg.com/474x/65/e6/35/65e6352d40424e8ccc86a7e7e604effd.jpg" alt="Akarsh Image" />
         <div class="hero-text">
             <h2>Welcome to My Portfolio!</h2>
-            <p style="color: #fff;" >
+            <p style="color: #fff;">
                 Akarsh is an Information Science student at PES Engineering College, passionate about coding, UI/UX design, and creative problem-solving.
             </p>
         </div>
@@ -278,10 +310,20 @@ footer a:hover {
         <p>Follow me on:</p>
         <p>
             <a href="https://www.linkedin.com/in/akarsh-venkatesha-ms-174779283/" class="round-button">LinkedIn</a>
+            
             <a href="https://github.com/Akarshms06" class="round-button">GitHub</a>
         </p>
         <p>&copy; 2024 Akarsh. All Rights Reserved.</p>
+        
     </footer>
 
 </body>
+</html>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
 </html>
